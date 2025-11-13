@@ -1,0 +1,222 @@
+body{
+
+    margin: 0px;
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+}
+/*banner*/
+.banner{
+    background-image: url("../image/banner/banner3.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    width: 100%;
+    height: 650px;
+}
+/*menu(icones)*/
+.icon-home {
+    width: 100%; /*Largura*/
+    background-color: #8a8b34; /*Color de Fundo*/
+    overflow: auto; /*Barra de rolagem se o elemento ficar grande*/
+}
+/*icones*/
+  .icon-home a {
+    float: left; 
+    width: 20%; 
+    text-align: center; 
+    padding: 15px 0; 
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 36px; 
+}
+  .icon-home a:hover{ 
+      background-color: #000;
+}
+  .home {
+    background-color: #8a8b34;
+}
+  .text-center {
+    padding:180px;
+    text-align:center;
+    font-size: 20px;
+}
+/*-------meio pagina-----*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px;
+    width: 100%;
+
+}
+.produto{
+    width: 250px;
+    height: 550px;
+    margin: 0px;
+    padding: 35px;
+    align-items: center;
+}
+
+.caixa-dis{/*caixa card(imagens)*/
+    display: flex;
+    flex-direction: row;
+     align-content:space-around ;
+     margin: 10px 5px 250px 5px ;
+    
+
+}
+  .product-card {/*caixa card*/
+    width: 100%;
+    height: 300px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 10px 5px 0 5px ;
+
+}
+.badge {/*etiqueta de promo*/
+    position: absolute;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background:  #8a8b34;
+    color: #fff;
+    padding: 3px 10px;
+}
+.product-tumb {/*caixa da img*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 46px;
+    background:aliceblue;
+}
+.product-tumb img {/*proporções da img*/
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-details {/*caixa de texto e preço*/
+    padding: 30px;
+}
+.product-catagory {/*categoria do perfume*/
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+.product-details h4 a {/*Nome do perfume*/
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details h4 a:hover {/*efeito da cor no nome do perfume*/
+    color: #95970c;
+}
+.product-details p {/*descrição do produto(p)*/
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+.product-bottom-details {/*linha antes do preço(caixa)*/
+    overflow: hidden;
+    border-top: 1px solid #999;
+    padding: 5px 0 15px 0;
+}
+.product-bottom-details div {/*botão de preço(efeito)*/
+    width: 50%;
+   
+}
+.preço {/*botão de preço(tamanho e cor*/
+    font-size: 18px;
+    color: #95970c;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;    
+}
+/*botão de comprar(animação)*/
+.preço:hover{
+    background-color: #95970c;
+    color: #fff;
+
+}
+.preço small {/*preço menor*/
+    font-size: 80%;
+    font-weight: 400;
+    
+    
+}
+/*rodapé*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #8a8b34;
+    color: white;
+    padding: 0px 0;
+}
+.interface{
+    background-color:#8a8b34;
+    width: 100%;
+    margin: 0px 0 0 0;
+}
+/*Texto maior do rodapé(h2)*/
+footer .linha1{
+    text-align: center;
+    border-bottom: 2px solid #999;
+    padding: 10px;
+    margin: 10px;
+}
+.linha1{
+    font-size: 20px;
+}
+/*formatação da logo*/
+footer .logo-fo img{
+    width: 150px;
+    height: 150px;
+    margin: 0 0 0px 30px;
+}
+/*paragrafo abaixo da logo*/
+.caixa-logo p{
+    font-size: 15px;
+    margin: 0; 
+}
+/*foramatação de toda a segunda linhan do rodapé*/
+footer .linha2{
+    width:auto;
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-around;
+    margin: 10px;
+    border-bottom: 2px solid #999;
+}
+/*medidas das caixas em linhas(logo e links)*/
+footer .caixa-logo{
+   max-width: 300px;
+}
+/*links de conta,home,lojas e etc..*/
+.linha2 .caixa-logo a{
+    text-decoration: none;
+    color: #dfdfdf;
+    display: block;
+    padding: 5px;
+}
+/*direitos autorais*/
+.linha3{
+text-align: center;
+padding: 10px;
+}
+ /*icons do facebook e instagram*/
+.caixa-logo i{
+    font-size: 35px;
+    cursor: pointer;
+    padding: 5px;
+}

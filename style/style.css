@@ -1,0 +1,324 @@
+body{
+    margin: 0px;
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* CARROSSEL */
+.carousel-container {
+  width: 100%;
+  height: 700px;
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: 16 / 9; /* Mantém proporção */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-size:cover;
+  background-position: center;
+}
+
+.carousel-slide {
+  display:none;
+}
+
+.carousel-slide img {
+  width: 100%;            /* a imagem ocupa toda a largura do carrossel */
+  height: auto;           /* ocupa toda a altura */
+  object-fit:contain;      /* corta o excesso mantendo proporção e preenchendo tudo */
+  object-position: auto;/* centraliza a imagem no corte */
+  display: block;         /* remove espaço em branco abaixo da imagem */
+   
+}
+  .carousel-slide img {
+    object-fit: contain; /* Mostra imagem inteira se for muito larga */
+  }
+/* Botões prev e next */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 3px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Efeito de transição */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+/*menu e itens*/
+.icon-home {
+    width: 100%; /*Largura*/
+    background-color: #16441c; /*Color de Fundo*/
+    overflow: auto; /*Barra de rolagem se o elemento ficar grande*/
+}
+  .icon-home a {
+    float: left; /* elementos flutuando para esquerda*/
+    width: 20%; /*Largura*/
+    text-align: center; /*texto no centro*/
+    padding: 15px 0; /*Distância entre conteúdos*/
+    transition: all 0.3s ease; /*transição entre dois estados*/
+    color: white; /*cor do conteúdo*/
+    font-size: 36px; /*tamanho da fonte*/
+}
+  .icon-home a:hover{ /*apontador*/
+      background-color: #000;
+}
+  .home {
+    background-color: #1e8337;
+}
+  .text-center {
+    padding:180px;
+    text-align:center;
+    font-size: 20px;
+}
+/*meio da pagina(conteudos)*/
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+
+}
+.produto{
+    width: 250px;
+    height: 550px;
+    margin-top: 30px;
+    padding: 25px;
+    align-items: center;
+}
+/*video*/
+.vid{
+    width: 100%;
+    padding:5px 0 0 0;
+    margin: 0px 0 0 0px;
+}
+#h3{
+    color: #16441c;
+}
+#h4{
+    color: #999;
+}
+ .veja{
+    background-color: #16441c;
+    color: #dfdfdf;
+    width:auto;
+    margin-left: 30px;
+    font-size: 17px;
+    text-decoration: none;
+}
+.veja:hover{
+    background-color: #03611b;
+    cursor: pointer;
+
+
+}
+.product-card {/*caixa card*/
+    width: 100%;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 10px 5px 0 5px ;
+}
+.badge {/*etiqueta de promo*/
+    position: absolute;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background:  #16441c;
+    color: #fff;
+    padding: 3px 10px;
+}
+.product-tumb {/*caixa da img*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 46px;
+    background:aliceblue;
+}
+.product-tumb img {/*proporções da img*/
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-details {/*caixa de texto e preço*/
+    padding: 30px;
+}
+.product-catagory {/*categoria do perfume*/
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+.product-details h4 a {/*Nome do perfume*/
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details h4 a:hover {/*efeito da cor no nome do perfume*/
+    color: #95970c;
+}
+.product-details p {/*descrição do produto(p)*/
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+.product-bottom-details {/*linha antes do preço(caixa)*/
+    overflow: hidden;
+    border-top: 1px solid #999;
+    padding: 5px 0 15px 0;
+}
+.product-bottom-details div {/*botão de preço(efeito)*/
+    width: 50%;
+   
+}
+.preço {/*botão de preço(tamanho e cor*/
+    font-size: 18px;
+    color: #03611b;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;    
+}
+/*botão de comprar(animação)*/
+.preço:hover{
+    background-color: #03611b;
+    color: #fff;
+
+}
+.preço small {/*preço menor*/
+    font-size: 80%;
+    font-weight: 400;
+    
+    
+}
+/*texto da historia*/
+.texto-his{
+    text-align: center;
+    color: #999;
+    width: 100%;
+    height: 100%;   
+}
+/*---------rodapé(formatação)--------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #16441c;
+    color: white;
+    padding: 0px 0;
+    margin: 60px 0 0 0;
+}
+.interface{
+    background-color: #16441c;
+    width: 100%;
+    margin: 20px 0 0 0;
+  
+}
+/*Texto maior do rodapé(h2)*/
+footer .linha1{
+    text-align: center;
+    border-bottom: 2px solid #999;
+    padding: 10px;
+    margin: 10px;
+}
+.linha1{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*formatação da logo*/
+footer .logo-fo img{
+    width: 160px;
+    height: 160px;
+    margin: 0 0 0px 30px;
+}
+/*paragrafo abaixo da logo*/
+.caixa-logo p{
+    font-size: 15px;
+    margin: 0; 
+}
+/*foramatação de toda a segunda linhan do rodapé*/
+footer .linha2{
+    width:auto;
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-around;
+    margin: 10px;
+    border-bottom: 2px solid #999;
+}
+/*medidas das caixas em linhas(logo e links)*/
+footer .caixa-logo{
+   max-width: 300px;
+}
+/*links de conta,home,lojas e etc..*/
+.linha2 .caixa-logo a{
+    text-decoration: none;
+    color: #dfdfdf;
+    display: block;
+    padding: 5px;
+}
+/*direitos autorais*/
+.linha3{
+text-align: center;
+padding: 10px;
+}
+ /*icons do facebook e instagram*/
+.caixa-logo i{
+    font-size: 35px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; } 
+  to { opacity: 1; }
+}
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 30vh;
+  }
+}
+/* Responsivo — telas menores que 360px */
+@media (max-width: 360px) {
+  .carousel-container {
+    aspect-ratio: 4 / 3; /* Proporção mais vertical */
+    border-radius: 8px;
+  }}
