@@ -8,11 +8,11 @@ body{
 /* CARROSSEL */
 .carousel-container {
   width: 100%;
-  height: 700px;
   margin: 0;
   overflow: hidden;
-  aspect-ratio: 16 / 9; /* Mantém proporção */
+  aspect-ratio: 16 / 7; /* Mantém proporção */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color:#70a17c;
   position: relative;
   background-size:cover;
   background-position: center;
@@ -26,36 +26,34 @@ body{
   width: 100%;            /* a imagem ocupa toda a largura do carrossel */
   height: auto;           /* ocupa toda a altura */
   object-fit:contain;      /* corta o excesso mantendo proporção e preenchendo tudo */
-  object-position: auto;/* centraliza a imagem no corte */
+  object-position: auto;   /* centraliza a imagem no corte */
   display: block;         /* remove espaço em branco abaixo da imagem */
    
 }
-  .carousel-slide img {
-    object-fit: contain; /* Mostra imagem inteira se for muito larga */
-  }
 /* Botões prev e next */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   padding: 16px;
+
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.3s ease;
-  border-radius: 3px;
+  border-radius: 10px;
   user-select: none;
   transform: translateY(-50%);
 }
 
 .prev {
   left: 0;
-  border-radius: 0 3px 3px 0;
+  border-radius: 40px;
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 40px;
 }
 
 .prev:hover, .next:hover {

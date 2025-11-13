@@ -30,6 +30,7 @@ function showSlide(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
+
 // Opcional: Auto Slide
 setInterval(() => { changeSlide(1); }, 5000);
 
