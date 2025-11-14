@@ -1,0 +1,162 @@
+body{
+
+    margin: 0px;
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon-home {
+    width: 100%; 
+    background-color: #16441c; 
+    overflow: auto; 
+}
+/*icone do menu(dimensões e tamanhos)*/
+  .icon-home a {
+    float: left; 
+    width: 20%; 
+    text-align: center; 
+    padding: 15px 0; 
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 36px; 
+}
+  .icon-home a:hover{ /*apontador*/
+      background-color: #000;
+}
+  .home {
+    background-color: #1e8337;
+}
+  .text-center {
+    padding:180px;
+    text-align:center;
+    font-size: 20px;
+}
+
+.vid{/*videos*/
+    width:400px;
+    padding:5px 20px 20px 20px;
+    margin: 25px 0 0 0px;
+    position: relative;
+    color: #8d8f09;
+    cursor: pointer;
+    text-align: center;
+}
+.veja:hover{
+    color:#16441c ;
+}
+/*caixa maior do login(pai/fundo)*/
+.caixa-login{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 100%;
+  
+}
+/*dimensões da caixa login*/
+.conteudo{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    
+}
+/*conteudo do login(caixa/campos e cor,padding)*/
+.conteudo .campos{
+    
+    border-top:1px transparent solid; 
+    border-left:1px transparent solid; 
+    border-bottom:1px #535353 solid; 
+    border-right:1px transparent solid; 
+    font-size: 20px; 
+    display: flex;
+    margin: 25px;
+    padding: 5px;
+    width: auto;
+}
+/*botao entrar*/
+.btn { 
+    width:auto; 
+    float:center;
+    padding: 5px;
+    font-size:25px; 
+    background-color:#2c7c2c;; 
+    color:#fff; 
+    border:0; 
+    border-radius:4px;
+    transition:0.4s; 
+}
+.login .btn:hover  { 
+  background-color:#16441c;; 
+}
+
+/*rodape*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #16441c;
+    color: white;
+    padding: 0px 0;
+}
+.interface{
+    background-color: #16441c;
+    width: 100%;
+    margin: 0px 0 0 0;
+    height: auto;
+}
+/*Texto maior do rodapé(h2)*/
+footer .linha1{
+    text-align: center;
+    border-bottom: 2px solid #999;
+    padding: 10px;
+    margin: 10px;
+}
+.linha1{
+    font-size: 20px;
+}
+/*formatação da logo*/
+footer .logo-fo img{
+    width: 150px;
+    height: 150px;
+    margin: 0 0 0px 30px;
+}
+/*paragrafo abaixo da logo*/
+.caixa-logo p{
+    font-size: 15px;
+    margin: 0; 
+}
+/*foramatação de toda a segunda linhan do rodapé*/
+footer .linha2{
+    width:auto;
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-around;
+    margin: 10px;
+    border-bottom: 2px solid #999;
+}
+/*medidas das caixas em linhas(logo e links)*/
+footer .caixa-logo{
+   max-width: 300px;
+}
+/*links de conta,home,lojas e etc..*/
+.linha2 .caixa-logo a{
+    text-decoration: none;
+    color: #dfdfdf;
+    display: block;
+    padding: 5px;
+}
+/*direitos autorais*/
+.linha3{
+text-align: center;
+}
+ /*icons do facebook e instagram*/
+.caixa-logo i{
+    font-size: 35px;
+    cursor: pointer;
+    padding: 5px;
+}
+
