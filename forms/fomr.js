@@ -1,11 +1,11 @@
 function logar(){
 
     let login = document.getElementById('login').value;
-    let senha = document.getElementById('senha').value;
+    let senha = document.getElementById('senhalogin').value;
 
     if(login == "admin" && senha =="admin"){
         alert('Bem-vindo');
-        location.href = "produtos.html";
+        location.href = "admin.html";
     }
     else{
         alert('Usuario ou senha incorretos');
@@ -33,6 +33,31 @@ function showSlide(n) {
 
 // Opcional: Auto Slide
 setInterval(() => { changeSlide(1); }, 5000);
+
+
+
+const form = document.getElementById("cadastro");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // PEGAR DADOS
+    const nome = document.getElementById("nome").value;
+    const sobrenome = document.getElementById("sobrenome").value;
+    const email = document.getElementById("email").value;
+    const telefone = document.getElementById("telefone").value;
+    const senha = document.getElementById("senhacadastro").value;
+
+    // SALVAR NO LOCALSTORAGE
+    localStorage.setItem("nome", nome);
+    localStorage.setItem("sobrenome", sobrenome);
+    localStorage.setItem("email", email);
+    localStorage.setItem("telefone", telefone);
+    localStorage.setItem("senhacadastro", senha);
+
+    // REDIRECIONAR PARA OUTRA PÁGINA
+    window.location.href = "../index.html";
+});
 
 
 
